@@ -1,45 +1,6 @@
 import { ApolloServer } from '@apollo/server'
 import { startServerAndCreateNextHandler } from '@as-integrations/next'
-
-type Resolvers = {
-  Query: Query
-}
-
-type Query = {
-  hello: () => string
-  getCard: () => Card
-}
-
-type Card = {
-  word: string
-  definition: string
-  buzzWords: string[]
-}
-
-const resolvers: Resolvers = {
-  Query: {
-    hello: () => 'world',
-    getCard: () => ({
-      word: 'hello',
-      definition: 'world',
-      buzzWords: ['fizz', 'buzz', 'fizzbuzz'],
-    }),
-  },
-}
-
-const typeDefs = `#graphql
-  type Query {
-    hello: String
-    getCard: Card
-  }
-
-  type Card {
-    word: String
-    definition: String
-    buzzWords: [String]
-  }
-
-`
+import { resolvers, typeDefs } from './schema'
 
 const server = new ApolloServer({
   resolvers,
