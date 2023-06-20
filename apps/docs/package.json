@@ -15,7 +15,7 @@
     "ui": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^18.16.18",
+    "@types/node": "^20.3.1",
     "@types/react": "^18.2.13",
     "@types/react-dom": "^18.2.6",
     "autoprefixer": "^10.4.14",
@@ -24,6 +24,6 @@
     "tailwind-config": "workspace:*",
     "tailwindcss": "^3.3.2",
     "tsconfig": "workspace:*",
-    "typescript": "^4.9.5"
+    "typescript": "^5.1.3"
   }
 }
