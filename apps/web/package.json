@@ -21,6 +21,7 @@
     "ui": "workspace:*"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "@graphql-codegen/cli": "^4.0.1",
     "@graphql-codegen/typescript-resolvers": "^4.0.1",
     "@graphql-tools/load-files": "^7.0.0",
