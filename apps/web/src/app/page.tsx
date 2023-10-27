@@ -2,8 +2,6 @@ import { Metadata } from 'next'
 import { useQuery } from './graphql/client'
 import { Card as ToobaCard } from './graphql/schema/generated'
 
-export const dynamic = 'force-dynamic'
-
 export const metadata: Metadata = {
   title: 'Tooba',
 }
