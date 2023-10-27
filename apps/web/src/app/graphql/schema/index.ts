@@ -1,16 +1,10 @@
-import { DocumentNode, gql } from '@apollo/client'
+import { gql } from '@apollo/client'
 import { faker } from '@faker-js/faker'
 import { loadFilesSync } from '@graphql-tools/load-files'
 import { mergeTypeDefs } from '@graphql-tools/merge'
 import { Resolvers } from './generated'
 
-type OperationType = 'GET' | 'POST' | 'PUT' | 'DELETE'
-
-type GraphType = 'CARD'
-
-export type QueryOption = `${OperationType}_${GraphType}`
-
-export const Queries: Record<QueryOption, DocumentNode> = {
+export const Queries = {
   GET_CARD: gql`
     query {
       card {
@@ -20,10 +14,7 @@ export const Queries: Record<QueryOption, DocumentNode> = {
       }
     }
   `,
-  POST_CARD: undefined,
-  PUT_CARD: undefined,
-  DELETE_CARD: undefined,
-}
+} as const
 
 const typesArray = loadFilesSync('**/*.graphql')
 export const typeDefs = mergeTypeDefs(typesArray)

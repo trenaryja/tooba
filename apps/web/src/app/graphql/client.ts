@@ -7,7 +7,7 @@ import {
   TypedDocumentNode,
 } from '@apollo/client'
 import { registerApolloClient } from '@apollo/experimental-nextjs-app-support/rsc'
-import { Queries, QueryOption } from './schema'
+import { Queries } from './schema'
 
 const { getClient } = registerApolloClient(() => {
   return new ApolloClient({
@@ -21,7 +21,7 @@ const { getClient } = registerApolloClient(() => {
   })
 })
 
-export const useQuery = async <T>(query: QueryOption | DocumentNode | TypedDocumentNode<T, OperationVariables>) => {
+export const useQuery = async <T>(query: string | DocumentNode | TypedDocumentNode<T, OperationVariables>) => {
   const client = getClient()
   return await client.query<T>({
     query: typeof query === 'string' ? Queries[query] : query,

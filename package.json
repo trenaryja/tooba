@@ -1,37 +1,23 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "clean": "turbo clean",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint": "^8.52.0",
-    "eslint-config-custom": "workspace:*",
     "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.6",
-    "turbo": "^1.10.16"
+    "tsconfig": "workspace:*",
+    "turbo": "latest"
   },
   "packageManager": "pnpm@8.10.0-0+sha256.97597bc1145e5ec68a2b6ec49e38ad9e755842d0c63b1a2022a4fc63bac78d1c",
+  "name": "tooba",
   "prettier": {
     "jsxSingleQuote": true,
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "custom"
-    ],
-    "settings": {
-      "next": {
-        "rootDir": [
-          "apps/*/"
-        ]
-      }
-    }
   }
 }
