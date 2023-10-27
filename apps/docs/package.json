@@ -30,5 +30,11 @@
     "extends": [
       "custom"
     ]
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
   }
 }

@@ -186,6 +186,9 @@ importers:
       tailwind-config:
         specifier: workspace:*
         version: link:../tailwind-config
+      tailwindcss:
+        specifier: ^3.3.5
+        version: 3.3.5
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
