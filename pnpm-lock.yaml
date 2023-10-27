@@ -12,7 +12,7 @@ importers:
         specifier: ^8.52.0
         version: 8.52.0
       eslint-config-custom:
-        specifier: workspace:0.0.0
+        specifier: workspace:*
         version: link:packages/eslint-config-custom
       prettier:
         specifier: ^3.0.3
