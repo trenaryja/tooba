@@ -21,5 +21,18 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "custom"
+    ],
+    "settings": {
+      "next": {
+        "rootDir": [
+          "apps/*/"
+        ]
+      }
+    }
   }
 }
