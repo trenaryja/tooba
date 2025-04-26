@@ -10,32 +10,32 @@
     "generate": "gql-gen --config codegen.ts"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.6",
-    "@apollo/experimental-nextjs-app-support": "^0.4.3",
-    "@apollo/server": "^4.9.5",
-    "@as-integrations/next": "^2.0.2",
+    "@apollo/client": "^3.9.4",
+    "@apollo/experimental-nextjs-app-support": "^0.8.0",
+    "@apollo/server": "^4.10.0",
+    "@as-integrations/next": "^3.0.0",
     "graphql": "^16.8.1",
-    "next": "^14.0.0",
+    "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ui": "workspace:*"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.2.0",
-    "@graphql-codegen/cli": "^5.0.0",
-    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@faker-js/faker": "^8.4.1",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/typescript-resolvers": "^4.0.4",
     "@graphql-tools/load-files": "^7.0.0",
-    "@graphql-tools/merge": "^9.0.0",
-    "@types/node": "^20.8.9",
-    "@types/react": "^18.2.33",
-    "@types/react-dom": "^18.2.14",
-    "autoprefixer": "^10.4.16",
+    "@graphql-tools/merge": "^9.0.1",
+    "@types/node": "^20.11.17",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.17",
     "eslint-config-custom": "workspace:*",
-    "postcss": "^8.4.31",
+    "postcss": "^8.4.35",
     "tailwind-config": "workspace:*",
-    "tailwindcss": "^3.3.5",
+    "tailwindcss": "^3.4.1",
     "tsconfig": "workspace:*",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   },
   "eslintConfig": {
     "extends": [

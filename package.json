@@ -4,15 +4,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write ."
+    "format": "prettier --write . \"!pnpm-lock.yaml\""
   },
   "devDependencies": {
-    "eslint": "^8.52.0",
-    "prettier": "^3.0.3",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
     "tsconfig": "workspace:*",
-    "turbo": "latest"
+    "turbo": "^1.12.3"
   },
-  "packageManager": "pnpm@8.10.0-0+sha256.97597bc1145e5ec68a2b6ec49e38ad9e755842d0c63b1a2022a4fc63bac78d1c",
   "name": "tooba",
   "prettier": {
     "jsxSingleQuote": true,
