@@ -1,5 +1,5 @@
 {
-  "name": "@acme/auth-proxy",
+  "name": "@tooba/auth-proxy",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,16 +13,16 @@
     "@auth/core": "catalog:"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
-    "@types/node": "^22.14.1",
+    "@tooba/eslint-config": "workspace:*",
+    "@tooba/prettier-config": "workspace:*",
+    "@tooba/tailwind-config": "workspace:*",
+    "@tooba/tsconfig": "workspace:*",
+    "@types/node": "^22.15.2",
     "eslint": "catalog:",
     "h3": "^1.15.1",
     "nitropack": "^2.11.9",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@tooba/prettier-config"
 }

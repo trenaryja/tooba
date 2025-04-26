@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 
-import { cn } from "@acme/ui";
-import { ThemeProvider, ThemeToggle } from "@acme/ui/theme";
-import { Toaster } from "@acme/ui/toast";
+import { cn } from "@tooba/ui";
+import { ThemeProvider, ThemeToggle } from "@tooba/ui/theme";
+import { Toaster } from "@tooba/ui/toast";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   ),
   title: "Create T3 Turbo",
   description: "Simple monorepo with shared backend for web & mobile apps",
+  icons: {
+    icon: "/Sousaphone_tuba_cartoon_style.min.svg",
+  },
   openGraph: {
     title: "Create T3 Turbo",
     description: "Simple monorepo with shared backend for web & mobile apps",

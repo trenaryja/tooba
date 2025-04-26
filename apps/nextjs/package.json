@@ -1,5 +1,5 @@
 {
-  "name": "@acme/nextjs",
+  "name": "@tooba/nextjs",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -14,13 +14,13 @@
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
-    "@acme/api": "workspace:*",
-    "@acme/auth": "workspace:*",
-    "@acme/db": "workspace:*",
-    "@acme/ui": "workspace:*",
-    "@acme/validators": "workspace:*",
     "@t3-oss/env-nextjs": "^0.13.0",
     "@tanstack/react-query": "catalog:",
+    "@tooba/api": "workspace:*",
+    "@tooba/auth": "workspace:*",
+    "@tooba/db": "workspace:*",
+    "@tooba/ui": "workspace:*",
+    "@tooba/validators": "workspace:*",
     "@trpc/client": "catalog:",
     "@trpc/server": "catalog:",
     "@trpc/tanstack-react-query": "catalog:",
@@ -32,11 +32,11 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
-    "@types/node": "^22.14.1",
+    "@tooba/eslint-config": "workspace:*",
+    "@tooba/prettier-config": "workspace:*",
+    "@tooba/tailwind-config": "workspace:*",
+    "@tooba/tsconfig": "workspace:*",
+    "@types/node": "^22.15.2",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",
     "dotenv-cli": "^8.0.0",
@@ -46,5 +46,5 @@
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@tooba/prettier-config"
 }

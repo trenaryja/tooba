@@ -1,7 +1,7 @@
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 
-import { appRouter, createTRPCContext } from "@acme/api";
-import { auth } from "@acme/auth";
+import { appRouter, createTRPCContext } from "@tooba/api";
+import { auth } from "@tooba/auth";
 
 /**
  * Configure basic CORS headers
@@ -42,3 +42,4 @@ const handler = auth(async (req) => {
 });
 
 export { handler as GET, handler as POST };
+
