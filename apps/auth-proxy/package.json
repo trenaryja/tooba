@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@auth/core": "catalog:"
+    "@auth/core": "catalog:",
+    "nitropack": "^2.11.9"
   },
   "devDependencies": {
     "@tooba/eslint-config": "workspace:*",
@@ -19,8 +20,7 @@
     "@tooba/tsconfig": "workspace:*",
     "@types/node": "^22.15.2",
     "eslint": "catalog:",
-    "h3": "^1.15.1",
-    "nitropack": "^2.11.9",
+    "h3": "^1.15.2",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
